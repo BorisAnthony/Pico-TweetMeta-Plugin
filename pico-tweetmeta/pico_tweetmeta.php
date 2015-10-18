@@ -10,16 +10,7 @@
  */
  
  class Pico_Tweetmeta {
- /*
-  private $is_tweetmeta;
-  private $plugin_path;
- 
-  public function __construct()
-  {
-    $this->is_tweetmeta = false;
-    $this->plugin_path = dirname(__FILE__);
-  }
-*/
+
   public function before_read_file_meta(&$headers)
   {
     $headers['tweetmeta'] = 'TweetMeta';
